@@ -12,3 +12,13 @@ export const getCharacters = () => {
       img: character.photoUrl
     })));
 };
+
+export const getCharacter = id => {
+  return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`)
+    .then(json => ({
+      id: json._id,
+      name: json.name,
+      image: json.photoUrl,
+      affiliation: json.affiliation
+    }));
+};
