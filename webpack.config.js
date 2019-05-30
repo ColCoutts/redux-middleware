@@ -1,5 +1,5 @@
 const HtmlPlugin = require('html-webpack-plugin');
-const CleanPlugin = require('clean-webpack-plugin');
+const { CleanPlugin } = require('clean-webpack-plugin');
 
 // eslint-disable-next-line
 module.exports = {
