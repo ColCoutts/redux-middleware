@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Character({ character }) {
   return (
     <section>
-      <img src={character.image} />
+      <img src={character.img} />
       <p>{character.name}</p>
     </section>
   );
