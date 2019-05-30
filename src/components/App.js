@@ -11,8 +11,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={AllCharacters}/>
-        <Route exact path="/character/:id" component={CharacterById}/>
+        <Route exact path="/" component={AllCharacters}/>
+        <Route path="/character/:id" component={CharacterById}/>
       </Switch>
     </Router>
   );

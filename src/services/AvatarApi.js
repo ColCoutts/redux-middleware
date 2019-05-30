@@ -15,6 +15,12 @@ export const getCharacters = () => {
 
 export const getCharacter = id => {
   return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`)
+    .then(res => ([res.ok, res.json()]))
+    .then(([ok, json]) => {
+      if(!ok) throw 'Unable to fetch your characters';
+      console.log(json);
+      return json;
+    })
     .then(json => ({
       id: json._id,
       name: json.name,

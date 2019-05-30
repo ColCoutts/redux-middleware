@@ -10,7 +10,7 @@ class CharacterById extends PureComponent {
     character: PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
       affiliation: PropTypes.string.isRequired
     }).isRequired,
     loading: PropTypes.bool.isRequired,

@@ -21,7 +21,7 @@ Characters.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
+    img: PropTypes.string,
   })).isRequired
 };
 
