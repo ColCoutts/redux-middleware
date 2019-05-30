@@ -1,0 +1,1 @@
+Avatar-Redux-Middleware
