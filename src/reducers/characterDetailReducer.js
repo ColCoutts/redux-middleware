@@ -1,7 +1,7 @@
 import {
   FETCH_CHARACTER,
   FETCH_CHARACTER_LOADING
-} from '../actions/characterActions';
+} from '../actions/characterDetailActions';
 
 const initialState = {
   character: null,
@@ -12,7 +12,7 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case FETCH_CHARACTER:
-      return { ...state, character: action.payload, loading: false};
+      return { ...initialState, character: action.payload, loading: false };
     case FETCH_CHARACTER_LOADING:
       return { ...state, loading: true };
     default:

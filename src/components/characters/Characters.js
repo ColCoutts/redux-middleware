@@ -19,9 +19,9 @@ function Characters({ characters }) {
 
 Characters.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired
   })).isRequired
 };
 

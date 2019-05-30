@@ -7,7 +7,7 @@ export const getCharacters = () => {
       return json;
     })
     .then(json => json.map(character => ({
-      id: character.id,
+      id: character._id,
       name: character.name,
       img: character.photoUrl
     })));
@@ -18,7 +18,7 @@ export const getCharacter = id => {
     .then(json => ({
       id: json._id,
       name: json.name,
-      image: json.photoUrl,
+      img: json.photoUrl,
       affiliation: json.affiliation
     }));
 };

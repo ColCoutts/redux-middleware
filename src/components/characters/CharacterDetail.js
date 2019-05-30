@@ -25,3 +25,5 @@ CharacterDetail.propTypes = {
     affiliation: PropTypes.string.isRequired
   }).isRequired
 };
+
+export default CharacterDetail;
