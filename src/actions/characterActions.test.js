@@ -7,7 +7,6 @@ import {
 jest.mock('../services/AvatarApi.js', () => ({
   getCharacters: () => Promise.resolve([])
 }));
-
 describe('characters actions', () => {
   it('dispatches fetch and load characters actions', () => {
     const thunk = fetchCharacters();

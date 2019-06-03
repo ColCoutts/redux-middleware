@@ -23,7 +23,7 @@ export const getCharacter = id => {
     })
     .then(json => ({
       id: json._id,
-      name: json.name,
+      pokemon: json.pokemon,
       img: json.photoUrl,
       affiliation: json.affiliation
     }));
